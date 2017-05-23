@@ -81,5 +81,67 @@
 </progress>
 ```
 ```
-123
+html5标签兼容html5shiv.js
+
+原理document.createElement("header")
+
+//自定义标签没有display等标签属性
+```
+##表单
+```
+<form>
+
+    <input type="email">//手机切换到英文键盘
+
+    <input type="tel">//手机切换到数字键盘
+
+    <input type="url">//手机切换到数字键盘
+
+    <input type="searck">//后面有一键清除内容
+
+    <input type="range" step="2" min="0" max="30">//后面有一键清除内容
+
+    <input type="number">
+
+    <input type="color">
+
+    <input type="datatime">//完整日期//////utc世界标准时间
+
+    <input type="datatime">//完整日期
+
+    <input type="datatime-local">//
+
+    <input type="time">//时分
+
+    <input type="date">//年月日
+
+    <input type="week">//
+
+     <input type="month">//
+
+     //提示信息
+
+     placeholder
+
+     <input type="text" placeholder="请输入密码..." >
+
+     //自动保存
+
+      <input type="text" placeholder="请输入密码..." autocomplete="off" >
+
+      //表单focus
+
+       <input type="text" placeholder="请输入密码..." autocomplete="off" autofocus>
+
+       //list   datalist
+
+       //required
+
+       //pattern//
+
+       //formaction//保存到草稿箱//submit上定义提交地址
+
+        <input type="submit" value="保存草稿箱"  formaction="http://www.baidu.com">
+
+</form>
 ```
