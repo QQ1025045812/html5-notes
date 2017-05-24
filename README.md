@@ -145,3 +145,98 @@ html5标签兼容html5shiv.js
 
 </form>
 ```
+### 验证反馈
+```
+
+invalid
+
+
+```
+
+### 新的选择器
+
+```
+html5支持情况https://www.caniuse.com/#index
+
+document.querySelector("#div1")//很像$  id  class tag [attr='']//  ie6\7不支持/////获取到第1个元素
+
+document.querySelectorAll(".div1")//获取一组
+
+document.getElementsByClassName()
+
+```
+### classList
+
+```
+//class集合
+
+alert(oDiv.classList)
+
+oDiv.classList.add()
+
+oDiv.classList.remove()
+
+oDiv.classList.toggle()/////
+
+//
+```
+### JSON新方法
+
+```
+parsee()字符串变json------严格json格式字符串-------旧方法eval不安全，可以解析任何字符串成js语句
+
+stringify()-----json转字符串，自动加上双引号
+
+//浅拷贝
+for(var attr in values){
+
+}
+
+//巧用深拷贝json.Stringify()---------字符串
+
+//ie6，7不支持json
+
+引入库http://www.json.org/
+
+地址
+https://github.com/douglascrockford/JSON-js
+
+```
+### 自定义属性
+```
+<div liu="yangyang"></div>
+
+oDiv.dataset.miaov
+
+jquerymobile中用的多（移动端框架）
+
+http://knockoutjs.com/
+```
+### 延迟加载js
+```
+js的加载会影响后面的内容加载
+很多浏览器都采用了并行加载js，但还是会影响其他内容
+
+html5的defer和async
+
+-defer：延迟加载会按顺序执行，在onload执行前被触发
+
+-async：异步加载，加载完就触发，有顺序问题
+
+Labjs库
+
+```
+## html5历史管理
+
+```
+onhashchange:改变hash值来管理
+
+history：
+----------服务器下运行
+
+----------pushState:三个参数：数据 标题（都没实现） 地址（可选）
+
+----------popState事件：读取数据 event.state
+
+----------注意：网址是虚假的，需要在服务器指定对应页面，不然刷新找不到页面
+```
